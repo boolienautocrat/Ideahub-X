@@ -1,1 +1,87 @@
 @use './extras' as e;
+
+section {
+    h3 {
+        letter-spacing: 0.06rem;
+        font-weight: 900;
+        color: e.$sec-color;
+        text-transform: uppercase;
+    }
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    padding: 23px 15px;
+    border: none;
+    background-color: e.$prim-color;
+    color: #fff;
+    font-weight: 900;
+    transition: all 0.2s linear;
+
+    &:hover {
+        background-color: e.$sec-color;
+    }
+}
+
+@media screen and (min-width:20rem) {
+    header {
+        padding: 1.875rem 1.25rem 0;
+    }
+
+    nav {
+        @include e.flex(row, unset, unset);
+        justify-content: space-between;
+    }
+
+    .text {
+        padding: 3.75rem 1.25rem;
+        text-align: center;
+
+        h3 {
+            font-size: 0.9688rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: .625rem 0 .625rem;
+            color: e.$prim-color;
+            line-height: 1.1;
+        }
+
+        p {
+            color: #2e4567;
+            font-weight: 500;
+            line-height: 1.5;
+            margin: 1rem 0 0;
+        }
+    }
+
+    .cta {
+        margin: 50px 0 0 0;
+        @include e.flex (column, unset, 1.25rem);
+
+        input {
+            width: 100%;
+            padding: 1.25rem .9375rem;
+            font-weight: 500;
+            border: none;
+            outline: 1px #e4e8ed solid;
+            transition: all 0.2s linear;
+
+            &:hover,
+            &:focus {
+                outline: 1px e.$prim-color solid;
+            }
+        }
+    }
+
+    .img-wrapper {
+        background-color: e.$prim-color;
+        padding: 3.4375rem 2.1875rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}
