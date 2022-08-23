@@ -38,6 +38,10 @@ button {
     font-size: 16px;
 }
 
+body {
+    color: #69778c;
+}
+
 @mixin flex ($dir, $align, $gap) {
     display: flex;
     flex-direction: $dir;

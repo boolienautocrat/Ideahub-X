@@ -32,14 +32,17 @@ button {
   font-size: 16px;
 }
 
+body {
+  color: #69778c;
+}
+
 section h3 {
   letter-spacing: 0.06rem;
   font-weight: 900;
-  color: #47bdff;
   text-transform: uppercase;
 }
 
-button {
+.prim-btn {
   cursor: pointer;
   width: 100%;
   padding: 23px 15px;
@@ -49,8 +52,23 @@ button {
   font-weight: 900;
   transition: all 0.2s linear;
 }
-button:hover {
+.prim-btn:hover {
   background-color: #47bdff;
+}
+
+.btn-sec {
+  cursor: pointer;
+  padding: 23px 15px;
+  width: 100%;
+  border: none;
+  color: #162c4e;
+  background-color: #e4e8ed;
+  font-weight: 900;
+  transition: all 0.2s linear;
+}
+.btn-sec:hover {
+  background-color: #162c4e;
+  color: #fff;
 }
 
 @media screen and (min-width: 20rem) {
@@ -64,6 +82,17 @@ button:hover {
     align-items: unset;
     gap: unset;
     justify-content: space-between;
+  }
+
+  .text h2 {
+    color: #162c4e;
+    line-height: 1.1;
+    font-size: 1.75rem;
+    margin: 0.9375rem 0 0;
+  }
+
+  .intro-section h3 {
+    color: #47bdff;
   }
 
   .text {
@@ -111,5 +140,50 @@ button:hover {
   }
   .img-wrapper img {
     width: 100%;
+  }
+
+  .features-section .text {
+    padding: 0 1.25rem;
+    margin: 7.5rem 0 0;
+  }
+  .features-section h3 {
+    color: #fdb52a;
+  }
+  .features-section p {
+    color: #69778c;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  .features-section .buttons {
+    padding: 0 1.25rem;
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 1.25rem;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 7rem;
+    margin: 6.25rem 0 0;
+    padding: 0 2.5rem;
+  }
+  .features h2 {
+    color: #162c4e;
+  }
+
+  .feat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 20px;
+  }
+  .feat-card h2 {
+    font-size: 23px;
+    width: 85%;
+    margin: 0.625rem 0 0;
   }
 }

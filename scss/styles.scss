@@ -4,12 +4,11 @@ section {
     h3 {
         letter-spacing: 0.06rem;
         font-weight: 900;
-        color: e.$sec-color;
         text-transform: uppercase;
     }
 }
 
-button {
+.prim-btn {
     cursor: pointer;
     width: 100%;
     padding: 23px 15px;
@@ -24,6 +23,22 @@ button {
     }
 }
 
+.btn-sec {
+    cursor: pointer;
+    padding: 23px 15px;
+    width: 100%;
+    border: none;
+    color: e.$prim-color;
+    background-color: #e4e8ed;
+    font-weight: 900;
+    transition: all 0.2s linear;
+
+    &:hover {
+        background-color: e.$prim-color;
+        color: #fff;
+    }
+}
+
 @media screen and (min-width:20rem) {
     header {
         padding: 1.875rem 1.25rem 0;
@@ -32,6 +47,21 @@ button {
     nav {
         @include e.flex(row, unset, unset);
         justify-content: space-between;
+    }
+
+    .text {
+        h2 {
+            color: e.$prim-color;
+            line-height: 1.1;
+            font-size: 1.75rem;
+            margin: .9375rem 0 0;
+        }
+    }
+
+    .intro-section {
+        h3 {
+            color: e.$sec-color;
+        }
     }
 
     .text {
@@ -82,6 +112,49 @@ button {
 
         img {
             width: 100%;
+        }
+    }
+
+    .features-section {
+        .text {
+            padding: 0 1.25rem;
+            margin: 7.5rem 0 0;
+        }
+
+        h3 {
+            color: #fdb52a;
+        }
+
+        p {
+            color: #69778c;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .buttons {
+            padding: 0 1.25rem;
+            margin: 6rem 0;
+            @include e.flex (column, unset, 1.25rem);
+        }
+    }
+
+    .features {
+        @include e.flex(column, unset, 7rem);
+        margin: 6.25rem 0 0;
+        padding: 0 2.5rem;
+
+        h2 {
+            color: e.$prim-color;
+        }
+    }
+
+    .feat-card {
+        @include e.flex(column, baseline, 20px);
+
+        h2 {
+            font-size: 23px;
+            width: 85%;
+            margin: .625rem 0 0;
         }
     }
 }
