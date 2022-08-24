@@ -36,10 +36,32 @@ body {
   color: #69778c;
 }
 
-section h3 {
+h1,
+h2 {
+  color: #162c4e;
+}
+
+h3 {
+  color: #fff;
+}
+
+.super-sub {
+  font-size: 0.9688rem;
   letter-spacing: 0.06rem;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.super-sub-finance {
+  color: #47bdff;
+}
+
+.super-sub-features {
+  color: #fdb52a;
+}
+
+.super-sub-product {
+  color: #ff7d85;
 }
 
 .prim-btn {
@@ -54,6 +76,7 @@ section h3 {
 }
 .prim-btn:hover {
   background-color: #47bdff;
+  color: #162c4e;
 }
 
 .btn-sec {
@@ -84,23 +107,16 @@ section h3 {
     justify-content: space-between;
   }
 
-  .text h2 {
+  .subheading {
     color: #162c4e;
     line-height: 1.1;
     font-size: 1.75rem;
     margin: 0.9375rem 0 0;
   }
 
-  .intro-section h3 {
-    color: #47bdff;
-  }
-
   .text {
     padding: 3.75rem 1.25rem;
     text-align: center;
-  }
-  .text h3 {
-    font-size: 0.9688rem;
   }
   .text h1 {
     font-size: 2.5rem;
@@ -146,9 +162,6 @@ section h3 {
     padding: 0 1.25rem;
     margin: 7.5rem 0 0;
   }
-  .features-section h3 {
-    color: #fdb52a;
-  }
   .features-section p {
     color: #69778c;
     line-height: 1.7;
@@ -167,7 +180,7 @@ section h3 {
     display: flex;
     flex-direction: column;
     align-items: unset;
-    gap: 7rem;
+    gap: 6.25rem;
     margin: 6.25rem 0 0;
     padding: 0 2.5rem;
   }
@@ -185,5 +198,42 @@ section h3 {
     font-size: 23px;
     width: 85%;
     margin: 0.625rem 0 0;
+  }
+
+  .product-section {
+    background-color: #162c4e;
+    padding: 6.25rem 1.25rem;
+  }
+  .product-section h2 {
+    color: #fff;
+  }
+
+  .prod-features {
+    margin: 3.125rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 4.5rem;
+  }
+
+  .prod-feat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 0.9375rem;
+  }
+  .prod-feat-card h3 {
+    font-size: 1.375rem;
+  }
+  .prod-feat-card p {
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.7;
+    width: 89%;
+  }
+
+  .prod-img-wrapper img {
+    width: 100%;
+    border-radius: 0 50% 0 0;
   }
 }

@@ -42,6 +42,34 @@ body {
     color: #69778c;
 }
 
+h1,
+h2 {
+    color: $prim-color;
+}
+
+h3 {
+    color: #fff;
+}
+
+.super-sub {
+    font-size: 0.9688rem;
+    letter-spacing: 0.06rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.super-sub-finance {
+    color: $sec-color;
+}
+
+.super-sub-features {
+    color: #fdb52a;
+}
+
+.super-sub-product {
+    color: #ff7d85;
+}
+
 @mixin flex ($dir, $align, $gap) {
     display: flex;
     flex-direction: $dir;

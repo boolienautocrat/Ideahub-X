@@ -1,13 +1,5 @@
 @use './extras' as e;
 
-section {
-    h3 {
-        letter-spacing: 0.06rem;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-}
-
 .prim-btn {
     cursor: pointer;
     width: 100%;
@@ -20,6 +12,7 @@ section {
 
     &:hover {
         background-color: e.$sec-color;
+        color: e.$prim-color;
     }
 }
 
@@ -49,28 +42,16 @@ section {
         justify-content: space-between;
     }
 
-    .text {
-        h2 {
-            color: e.$prim-color;
-            line-height: 1.1;
-            font-size: 1.75rem;
-            margin: .9375rem 0 0;
-        }
-    }
-
-    .intro-section {
-        h3 {
-            color: e.$sec-color;
-        }
+    .subheading {
+        color: e.$prim-color;
+        line-height: 1.1;
+        font-size: 1.75rem;
+        margin: .9375rem 0 0;
     }
 
     .text {
         padding: 3.75rem 1.25rem;
         text-align: center;
-
-        h3 {
-            font-size: 0.9688rem;
-        }
 
         h1 {
             font-size: 2.5rem;
@@ -121,10 +102,6 @@ section {
             margin: 7.5rem 0 0;
         }
 
-        h3 {
-            color: #fdb52a;
-        }
-
         p {
             color: #69778c;
             line-height: 1.7;
@@ -139,7 +116,7 @@ section {
     }
 
     .features {
-        @include e.flex(column, unset, 7rem);
+        @include e.flex(column, unset, 6.25rem);
         margin: 6.25rem 0 0;
         padding: 0 2.5rem;
 
@@ -155,6 +132,42 @@ section {
             font-size: 23px;
             width: 85%;
             margin: .625rem 0 0;
+        }
+    }
+
+    .product-section {
+        background-color: e.$prim-color;
+        padding: 6.25rem 1.25rem;
+
+        h2 {
+            color: #fff;
+        }
+    }
+
+    .prod-features {
+        margin: 3.125rem 0;
+        @include e.flex(column, unset, 4.5rem);
+    }
+
+    .prod-feat-card {
+        @include e.flex(column, baseline, .9375rem);
+
+        h3 {
+            font-size: 1.375rem;
+        }
+
+        p {
+            color: #fff;
+            font-weight: 500;
+            line-height: 1.7;
+            width: 89%;
+        }
+    }
+
+    .prod-img-wrapper {
+        img {
+            width: 100%;
+            border-radius: 0 50% 0 0;
         }
     }
 }
