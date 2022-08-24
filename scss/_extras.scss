@@ -43,12 +43,9 @@ body {
 }
 
 h1,
-h2 {
-    color: $prim-color;
-}
-
+h2,
 h3 {
-    color: #fff;
+    color: $prim-color;
 }
 
 .super-sub {
@@ -58,15 +55,15 @@ h3 {
     text-transform: uppercase;
 }
 
-.super-sub-finance {
+.super-sub-blue {
     color: $sec-color;
 }
 
-.super-sub-features {
+.super-sub-yellow {
     color: #fdb52a;
 }
 
-.super-sub-product {
+.super-sub-red {
     color: #ff7d85;
 }
 

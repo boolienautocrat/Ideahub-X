@@ -37,12 +37,9 @@ body {
 }
 
 h1,
-h2 {
-  color: #162c4e;
-}
-
+h2,
 h3 {
-  color: #fff;
+  color: #162c4e;
 }
 
 .super-sub {
@@ -52,15 +49,15 @@ h3 {
   text-transform: uppercase;
 }
 
-.super-sub-finance {
+.super-sub-blue {
   color: #47bdff;
 }
 
-.super-sub-features {
+.super-sub-yellow {
   color: #fdb52a;
 }
 
-.super-sub-product {
+.super-sub-red {
   color: #ff7d85;
 }
 
@@ -195,7 +192,7 @@ h3 {
     gap: 20px;
   }
   .feat-card h2 {
-    font-size: 23px;
+    font-size: 1.4375rem;
     width: 85%;
     margin: 0.625rem 0 0;
   }
@@ -224,6 +221,7 @@ h3 {
   }
   .prod-feat-card h3 {
     font-size: 1.375rem;
+    color: #fff;
   }
   .prod-feat-card p {
     color: #fff;
@@ -235,5 +233,42 @@ h3 {
   .prod-img-wrapper img {
     width: 100%;
     border-radius: 0 50% 0 0;
+  }
+
+  .get-started {
+    padding: 6.25rem 1.25rem;
+    text-align: center;
+  }
+
+  .steps-wrapper {
+    margin: 3.125rem 0 1.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 6.25rem;
+  }
+
+  .step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    gap: 1.25rem;
+  }
+  .step-card span {
+    background: #162c4e;
+    color: #fff;
+    padding: 1.1875rem 0;
+    width: 4.8rem;
+    border-radius: 50px;
+    margin: -3.4375rem auto 0.625rem;
+    font-size: 2.375rem;
+    font-weight: 900;
+  }
+  .step-card h3 {
+    font-size: 1.4375rem;
+  }
+  .step-card p {
+    font-weight: 500;
+    line-height: 1.7;
   }
 }
