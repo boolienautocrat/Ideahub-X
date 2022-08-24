@@ -104,6 +104,10 @@ h3 {
     justify-content: space-between;
   }
 
+  .intro-section {
+    background-color: #fff8e5;
+  }
+
   .subheading {
     color: #162c4e;
     line-height: 1.1;
