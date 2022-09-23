@@ -210,4 +210,99 @@
             line-height: 1.7;
         }
     }
+
+    footer {
+        background-color: e.$prim-color;
+        padding: 3.125rem 1.25rem 0;
+
+        .subheading {
+            color: #e4e8ed;
+            text-align: center;
+        }
+
+        .btn-sec {
+            margin: 2.5rem 0 2.5rem;
+
+            &:hover {
+                background-color: e.$sec-color;
+                color: e.$prim-color;
+            }
+        }
+
+        hr {
+            border: 1px solid #fff;
+            border-bottom: none;
+        }
+
+        h3,
+        p {
+            color: #e4e8ed;
+        }
+
+        .contact-dev {
+            margin: 3.125rem 0;
+
+            img {
+                height: 20px;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        .socials {
+            margin: 1.875rem 0 0;
+            @include e.flex(column, unset, 1.25rem);
+
+            div {
+                @include e.flex(unset, center, .625rem);
+                cursor: pointer;
+
+                &:hover p,
+                &:hover a {
+                    color: #47bdff;
+                }
+
+                &:hover span {
+                    background-color: #47bdff;
+                }
+
+                span {
+                    width: 1.875rem;
+                    padding: .3125rem;
+                    background-color: #fff;
+                    transition: all 0.2s linear;
+                }
+
+                p {
+                    font-size: 1.1875rem;
+                    font-weight: 500;
+                    transition: all 0.2s linear;
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .credits {
+            text-align: center;
+            margin: 2.5rem 0 0;
+
+            div {
+                margin: .625rem 0 0;
+                font-weight: 500;
+
+                p {
+                    line-height: 1.7;
+                }
+            }
+        }
+
+        .credit-text {
+            font-size: 13px;
+            margin: 2.5rem 0 0;
+            padding: 0 0 .625rem;
+        }
+    }
 }
