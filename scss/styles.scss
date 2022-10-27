@@ -306,3 +306,45 @@
         }
     }
 }
+
+@media screen and (min-width:48rem) {
+    .super-sub {
+        font-size: 1.125rem;
+    }
+
+    .text {
+        padding: 5rem 3.75rem;
+
+        h1 {
+            font-size: 3.625rem;
+            margin-top: 1.5625rem;
+        }
+
+        p {
+            font-size: 1.125rem;
+            width: 90%;
+            margin: 1rem auto 0;
+        }
+    }
+
+    .cta {
+        flex-direction: row;
+        justify-content: space-between;
+
+        form {
+            width: 65%;
+        }
+
+        button {
+            width: 30%;
+        }
+    }
+
+    .img-wrapper {
+        img {
+            width: 55%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
