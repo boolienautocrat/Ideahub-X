@@ -347,4 +347,34 @@
             margin: 0 auto;
         }
     }
+
+    .features-section {
+        .text {
+            padding: 0 3.75rem;
+
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        .buttons {
+            flex-direction: row;
+            padding: 0 10rem;
+        }
+    }
+
+    .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3.75rem;
+        justify-content: center;
+    }
+
+    .feat-card {
+        width: 45%;
+
+        h2 {
+            font-size: 1.75rem;
+        }
+    }
 }
