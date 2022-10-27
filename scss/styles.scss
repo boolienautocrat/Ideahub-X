@@ -395,4 +395,44 @@
             width: 80%;
         }
     }
+
+    .get-started {
+        padding: 8rem 2rem 6rem;
+
+        .prim-btn {
+            width: 30%;
+        }
+    }
+
+    .steps-wrapper {
+        margin: 3.125rem 0 6rem;
+    }
+
+    .step-card {
+        flex-direction: row;
+        gap: 2rem;
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    .image-wrapper {
+        width: 130%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .text-wrapper {
+        text-align: left;
+        justify-content: center;
+        @include e.flex(column, unset, 1.875rem);
+
+        span {
+            text-align: center;
+            margin: 0;
+        }
+    }
 }
