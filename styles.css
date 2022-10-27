@@ -402,12 +402,13 @@ footer p {
   .features-section .text {
     padding: 0 3.75rem;
   }
-  .features-section .text h2 {
-    font-size: 2.5rem;
-  }
   .features-section .buttons {
     flex-direction: row;
     padding: 0 10rem;
+  }
+
+  .subheading {
+    font-size: 2.5rem;
   }
 
   .features {
@@ -422,5 +423,21 @@ footer p {
   }
   .feat-card h2 {
     font-size: 1.75rem;
+  }
+
+  .product-section {
+    padding: 8rem 3rem;
+  }
+
+  .prod-features {
+    gap: 3rem;
+  }
+
+  .prod-feat-card {
+    width: 80%;
+  }
+
+  .prod-img-wrapper img {
+    width: 80%;
   }
 }
