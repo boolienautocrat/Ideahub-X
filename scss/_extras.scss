@@ -50,9 +50,12 @@ h3 {
 
 a {
     color: #e4e8ed;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
 .super-sub {
     font-size: 0.9688rem;
     letter-spacing: 0.06rem;

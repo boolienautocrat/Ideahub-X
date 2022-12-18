@@ -44,7 +44,11 @@ h3 {
 
 a {
   color: #e4e8ed;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .super-sub {
@@ -101,7 +105,6 @@ a {
     padding: 1.875rem 1.25rem 0;
     background-color: #fff8e5;
   }
-
   nav {
     display: flex;
     flex-direction: row;
@@ -109,18 +112,18 @@ a {
     gap: unset;
     justify-content: space-between;
   }
-
+  nav ul {
+    display: none;
+  }
   .intro-section {
     background-color: #fff8e5;
   }
-
   .subheading {
     color: #162c4e;
     line-height: 1.1;
     font-size: 1.75rem;
     margin: 0.9375rem 0 0;
   }
-
   .text {
     padding: 3.75rem 1.25rem;
     text-align: center;
@@ -137,7 +140,6 @@ a {
     line-height: 1.5;
     margin: 1rem 0 0;
   }
-
   .cta {
     margin: 50px 0 0 0;
     display: flex;
@@ -156,7 +158,6 @@ a {
   .cta input:hover, .cta input:focus {
     outline: 1px #162c4e solid;
   }
-
   .img-wrapper {
     background-color: #162c4e;
     padding: 3.4375rem 2.1875rem;
@@ -164,7 +165,6 @@ a {
   .img-wrapper img {
     width: 100%;
   }
-
   .features-section .text {
     padding: 0 1.25rem;
     margin: 7.5rem 0 0;
@@ -182,7 +182,6 @@ a {
     align-items: unset;
     gap: 1.25rem;
   }
-
   .features {
     display: flex;
     flex-direction: column;
@@ -194,7 +193,6 @@ a {
   .features h2 {
     color: #162c4e;
   }
-
   .feat-card {
     display: flex;
     flex-direction: column;
@@ -206,7 +204,6 @@ a {
     width: 85%;
     margin: 0.625rem 0 0;
   }
-
   .product-section {
     background-color: #162c4e;
     padding: 6.25rem 1.25rem;
@@ -214,7 +211,6 @@ a {
   .product-section h2 {
     color: #fff;
   }
-
   .prod-features {
     margin: 3.125rem 0;
     display: flex;
@@ -222,7 +218,6 @@ a {
     align-items: unset;
     gap: 4.5rem;
   }
-
   .prod-feat-card {
     display: flex;
     flex-direction: column;
@@ -239,17 +234,14 @@ a {
     line-height: 1.7;
     width: 89%;
   }
-
   .prod-img-wrapper img {
     width: 100%;
     border-radius: 0 50% 0 0;
   }
-
   .get-started {
     padding: 6.25rem 1.25rem;
     text-align: center;
   }
-
   .steps-wrapper {
     margin: 3.125rem 0 1.875rem;
     display: flex;
@@ -257,7 +249,6 @@ a {
     align-items: unset;
     gap: 6.25rem;
   }
-
   .step-card {
     display: flex;
     flex-direction: column;
@@ -288,7 +279,6 @@ a {
   .step-card .text-wrapper h3 {
     margin: 0 0 0.9375rem;
   }
-
   footer {
     background-color: #162c4e;
     padding: 3.125rem 1.25rem 0;
@@ -309,7 +299,7 @@ a {
     border-bottom: none;
   }
   footer h3,
-footer p {
+  footer p {
     color: #e4e8ed;
   }
   footer .contact-dev {
@@ -375,7 +365,6 @@ footer p {
   .super-sub {
     font-size: 1.125rem;
   }
-
   .text {
     padding: 5rem 3.75rem;
   }
@@ -388,7 +377,6 @@ footer p {
     width: 90%;
     margin: 1rem auto 0;
   }
-
   .cta {
     flex-direction: row;
     justify-content: space-between;
@@ -399,13 +387,11 @@ footer p {
   .cta button {
     width: 30%;
   }
-
   .img-wrapper img {
     width: 55%;
     display: block;
     margin: 0 auto;
   }
-
   .features-section .text {
     padding: 0 3.75rem;
   }
@@ -413,52 +399,42 @@ footer p {
     flex-direction: row;
     padding: 0 10rem;
   }
-
   .subheading {
     font-size: 2.5rem;
   }
-
   .features {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3.75rem;
     justify-content: center;
   }
-
   .feat-card {
     width: 45%;
   }
   .feat-card h2 {
     font-size: 1.75rem;
   }
-
   .product-section {
     padding: 8rem 3rem;
   }
-
   .prod-features {
     gap: 3rem;
   }
-
   .prod-feat-card {
     width: 80%;
   }
-
   .prod-img-wrapper img {
     width: 80%;
   }
-
   .get-started {
     padding: 8rem 2rem 6rem;
   }
   .get-started .prim-btn {
     width: 30%;
   }
-
   .steps-wrapper {
     margin: 3.125rem 0 6rem;
   }
-
   .step-card {
     flex-direction: row;
     gap: 2rem;
@@ -466,14 +442,12 @@ footer p {
   .step-card h3 {
     font-size: 2rem;
   }
-
   .image-wrapper {
     width: 130%;
   }
   .image-wrapper img {
     width: 100%;
   }
-
   .text-wrapper {
     text-align: left;
     justify-content: center;
@@ -486,10 +460,32 @@ footer p {
     text-align: center;
     margin: 0;
   }
-
   footer .btn-sec {
     width: 30%;
     display: block;
     margin: 3.125rem auto 3.125rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    justify-content: start;
+    gap: 5rem;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    gap: 2rem;
+  }
+  nav ul li {
+    cursor: pointer;
+  }
+  nav ul a {
+    color: #252525;
+    transition: color 0.25s linear;
+  }
+  nav ul a:hover {
+    color: #47bdff;
   }
 }

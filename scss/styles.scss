@@ -41,6 +41,10 @@
     nav {
         @include e.flex(row, unset, unset);
         justify-content: space-between;
+
+        ul {
+            display: none;
+        }
     }
 
     .intro-section {
@@ -452,6 +456,31 @@
             width: 30%;
             display: block;
             margin: 3.125rem auto 3.125rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        justify-content: start;
+        gap: 5rem;
+
+        ul {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 1.2rem;
+            gap: 2rem;
+            li {
+                cursor: pointer;
+            }
+            a{
+                color: #252525;
+                transition: color 0.25s linear;
+            }
+            a:hover {
+                color: #47bdff;
+            }
         }
     }
 }
