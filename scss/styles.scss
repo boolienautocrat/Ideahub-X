@@ -461,6 +461,11 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .subheading {
+        font-size: 3.3rem;
+        width: 65%;
+        margin: 20px auto 0;
+    }
     nav {
         justify-content: start;
         gap: 5rem;
@@ -508,6 +513,31 @@
             border-radius: 5px;
             img {
                 width: 100%;
+            }
+        }
+    }
+    .features-section {
+        .text {
+            p {
+                width: 50%;
+                margin: 1.2rem auto 0;
+            }
+        }
+        .features {
+            justify-content: space-between;
+            padding: 0 80px;
+            gap: 8rem;
+            .feat-card {
+                justify-content: space-between;
+                width: 25%;
+            }
+        }
+        .buttons {
+            width: 35%;
+            margin: 10rem auto;
+            padding: 0;
+            button {
+                padding: 30px 20px;
             }
         }
     }
