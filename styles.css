@@ -472,6 +472,12 @@ ul {
     width: 65%;
     margin: 20px auto 0;
   }
+  .prod-feat-card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+  }
   nav {
     justify-content: start;
     gap: 5rem;
@@ -541,5 +547,35 @@ ul {
   }
   .features-section .buttons button {
     padding: 30px 20px;
+  }
+  .product-section {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: unset;
+    gap: 65px;
+  }
+  .product-section .prod-img-wrapper {
+    width: 50%;
+  }
+  .product-section .prod-img-wrapper img {
+    width: 100%;
+  }
+  .product-section .text-wrapper {
+    width: 50%;
+  }
+  .product-section .text-wrapper h2 {
+    margin: 20px 0 0;
+    width: 100%;
+  }
+  .product-section .prod-features {
+    gap: 4rem;
+  }
+  .product-section .prod-feat-card p {
+    width: 100%;
+  }
+  .product-section .prod-feat-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
