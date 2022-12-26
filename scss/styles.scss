@@ -601,4 +601,47 @@
             gap: 10px;
         }
     }
+
+    .get-started {
+        margin: 0 2rem 0;
+        padding: 8rem 0 6rem;
+
+        .subheading {
+            width: 80%;
+        }
+
+        .steps-wrapper {
+            gap: 3rem;
+            flex-direction: row;
+
+            .step-card {
+                flex-direction: column;
+                justify-content: space-between;
+
+                .image-wrapper {
+                    width: 100%;
+                    img {
+                        width: 400px;
+                    }
+                }
+                .text-wrapper {
+                    text-align: center;
+                    align-items: center;
+                    gap: 1rem;
+                    span {
+                        margin: -70px auto 25px;
+                    }
+                    h3 {
+                        margin: 0 0 0.5rem;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .prim-btn {
+            width: 20%;
+        }
+    }
 }
