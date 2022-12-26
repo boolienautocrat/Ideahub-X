@@ -616,4 +616,30 @@ ul {
   .get-started .prim-btn {
     width: 20%;
   }
+  footer .subheading {
+    text-align: unset;
+    margin: 2rem 0 0;
+  }
+  footer .btn-sec {
+    margin: 3.125rem 0 3.125rem;
+    width: 20%;
+  }
+  footer hr {
+    border: 1px solid;
+    border-bottom: none;
+  }
+  footer .credits {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .credits a {
+    text-decoration: underline;
+  }
+  footer .credits div {
+    display: flex;
+    gap: 1rem;
+  }
+  footer .credits div p {
+    font-size: 18px;
+  }
 }

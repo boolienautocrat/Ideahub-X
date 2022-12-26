@@ -644,4 +644,32 @@
             width: 20%;
         }
     }
+    footer {
+        .subheading {
+            text-align: unset;
+            margin: 2rem 0 0;
+        }
+        .btn-sec {
+            margin: 3.125rem 0 3.125rem;
+            width: 20%;
+        }
+        hr {
+            border: 1px solid;
+            border-bottom: none;
+        }
+        .credits {
+            display: flex;
+            justify-content: space-between;
+            a {
+                text-decoration: underline;
+            }
+            div {
+                display: flex;
+                gap: 1rem;
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
