@@ -331,6 +331,7 @@ ul {
     background-color: #47bdff;
   }
   footer .socials div span {
+    border-radius: 20%;
     width: 1.875rem;
     padding: 0.3125rem;
     background-color: #fff;
@@ -354,6 +355,10 @@ ul {
   }
   footer .credits div p {
     line-height: 1.7;
+  }
+  footer .credits a {
+    font-size: 22px;
+    font-weight: 700;
   }
   footer .credit-text {
     font-size: 13px;
@@ -629,17 +634,26 @@ ul {
     border-bottom: none;
   }
   footer .credits {
+    padding: 0 8rem 0 0;
     display: flex;
     justify-content: space-between;
   }
   footer .credits a {
-    text-decoration: underline;
+    font-size: 26px;
   }
   footer .credits div {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
   }
   footer .credits div p {
     font-size: 18px;
+    text-align: end;
+  }
+  footer .credit-text {
+    width: 35%;
+    line-height: 1.4;
+  }
+  footer .credit-text a {
+    font-weight: 600;
   }
 }
